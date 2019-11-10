@@ -1,0 +1,89 @@
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.doSomeThing{
+  height: 100%;
+  width: 100%
+}
+.topWrapper{
+  margin-bottom: 350rpx;
+}
+.mask{
+  z-index:10;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin-top: 180rpx;
+}
+.dotaWrapper{
+  padding: 0;
+  height: 150rpx;
+  width: 150rpx;
+  position: relative;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border:2rpx solid white
+}
+
+.dota{
+  border-radius: 50%;
+  height: 100%;
+  width: 100%
+}
+.bigItem{
+  z-index: 11;
+  color: #fff;
+  width: 400rpx;
+  height: 330rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  right: 23%;
+  top: 380rpx;
+}
+
+.minItem{
+  box-sizing: border-box;
+  /* border: 1rpx solid red; */
+  width: 90rpx;
+  height: 60rpx;
+  border-radius: 15rpx;
+  text-align: center; 
+  line-height: 60rpx;
+  background-color: rgba(255,251,240,0.7);
+  box-shadow: 1rpx 1rpx 0 2rpx rgb(255,251,240);
+  color: black
+}
+.minItem-hover{
+  color:red;
+  background-color: rgba(255,251,240,0.2);
+}
+.lowWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.runeShape{
+  border-radius: 50%
+}
+.beginTrigger{
+  width: 200rpx;
+  height: 200rpx;
+  background-color: transparent;
+
+}
+button::after{
+  border: none;
+}
+button-hover{
+  opacity:1
+}

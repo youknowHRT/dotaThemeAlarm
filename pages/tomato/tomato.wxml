@@ -1,0 +1,21 @@
+<view class='container'>
+  <view class='clock' >
+    <g-clock text="{{showTime}}" fontSize="90"></g-clock>
+  </view>
+  
+  <view wx:if="{{!againButtonVisible}}" >
+    <view class='stop' style="margin-bottom:60rpx">
+      <g-button type="change" text="暂停" size="mini" bindtap="clearTimer" wx:if="{{timeStatus ==='start'}}"></g-button>
+      <g-button type="change" text="开始" size="mini" bindtap="startTimer" wx:else></g-button>
+    </view>
+
+    <view class='abandon'>
+      <g-button  text="放弃" size="mini" bindtap="showConfirm" ></g-button>
+    </view>
+  </view>
+  
+  <view class='again' wx:else><g-button type="change" text="再来一组" size="mini" bindtap="anotherTomato"></g-button></view>
+  
+  <g-confirm visible="{{confirmVisible}}" bindconfirm='confirmAbandon' bindcancel="hideConfirm" placeholder="确认放弃？" backText="取消"></g-confirm>
+  <g-confirm visible="{{finishConfirmVisible}}" bindconfirm="finishConfirm" bindcancel="finishCancel" placeholder="任务完成" backText="退出"></g-confirm>
+</view>

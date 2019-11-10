@@ -1,0 +1,14 @@
+<view>
+  <view class='boxLevelOne'>
+    <view class='runeWrapper' 
+        wx:for="{{bgMin}}"
+        wx:key="index"
+        data-index="{{index}}"
+        data-id="{{item}}"
+        bindtap='chooseTheme'
+      >
+      <image class='rune' src='{{item}}'></image>
+      </view>
+  </view>
+  
+</view>

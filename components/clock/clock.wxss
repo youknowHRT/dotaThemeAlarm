@@ -1,0 +1,27 @@
+/* components/clock/clock.wxss */
+.clock{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  /* position: relative; */
+  border: 10rpx solid #FEDB87;
+  height:360rpx;
+  width: 360rpx;
+  border-radius: 50%;
+}
+.clock text{
+  color: #FBAE52;
+  font-size: 26rpx;
+  font-weight: bold;
+  /* position: absolute; */
+  /* top: 50%;
+  left:50%; */
+  /* transform:translate(-50%,-50%); */
+}
+/* .clock image{
+  width:320rpx;
+  height: 320rpx;
+} */
+.active{
+  opacity:0.9
+}

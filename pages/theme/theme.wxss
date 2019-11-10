@@ -1,0 +1,17 @@
+.boxLevelOne{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  padding: 15rpx 20rpx;
+}
+
+.runeWrapper{
+  display:inline-block;
+  margin: 10rpx 5rpx;
+}
+.rune{
+  border-radius: 10rpx;
+  box-shadow: 6px 6px 17px -5px rgba(0,0,0,0.75);
+  width: 336rpx;
+  height:480rpx;
+}

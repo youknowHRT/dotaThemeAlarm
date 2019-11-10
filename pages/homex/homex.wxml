@@ -1,0 +1,30 @@
+<view class='container' style='background-image:url({{backgroundIMG}})'>
+  <view class='doSomeThing'>
+    <view class='mask' wx:if="{{bigItemShow}}"></view>
+
+    <view class='topWrapper'>
+      <button  class='dotaWrapper' bindtap='showBigItem'>
+        <image src='../../images/dota1.png' class='dota'></image>
+      </button>
+      <view class='bigItem' wx:if="{{bigItemShow}}">
+        <view wx:for="{{minItems}}"  
+              wx:key="index" 
+              data-index="{{index}}"
+              data-id="{{item}}"
+              class='minItem' bindtap='chooseTime'
+              hover-class="minItem-hover"
+            >
+          {{item}}
+        </view>
+      </view>
+      
+    </view>
+    
+    <view class='lowWrapper'>
+      <navigator url="/pages/tomato/tomato" class='runeShape'>
+        <!-- <g-clock text="点击开始" binmyevent="onMyEvent"></g-clock> -->
+        <button bindmyevent="onMyEvent" class='beginTrigger'></button>
+      </navigator>
+    </view>
+  </view>
+</view>

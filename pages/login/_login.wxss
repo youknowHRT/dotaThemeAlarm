@@ -1,0 +1,59 @@
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  background: #EEF7F6;
+}
+.login .avatar{
+  width: 250rpx;
+  height: 250rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 12rpx solid #fe996e;
+  margin-bottom: 20rpx;
+  margin-top: 280rpx;
+}
+.name-wrap{
+  color: #F6705A;
+  font-size: 38rpx;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 40rpx;
+}
+.name-wrap::after{
+  content: "";
+  position: absolute;
+  width:30%;
+  height: 4rpx;
+  bottom: -8rpx;
+  left: 50%;
+  background: #FE996F;
+  transform: translateX(-50%)
+
+}
+button::after{
+  border:none
+}
+.button-hover{
+  opacity:0.9
+}
+.loginButton{
+  width: 360rpx;
+  height: 80rpx;
+  border-radius:16rpx;
+  color:#fff;
+  font-size:26rpx;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:40rpx auto;
+  background:linear-gradient(to right,#ef9875,#f6705a);
+}
+.login .binding{
+  color: #F6705A;
+  font-size: 25rpx;
+}

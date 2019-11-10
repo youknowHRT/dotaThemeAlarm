@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "g-clock": "../../components/clock/clock"
+  }
+}
