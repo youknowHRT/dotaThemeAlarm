@@ -1,17 +1,9 @@
 {
   "pages": [
-    "pages/homex/homex",
-    "pages/tomato/tomato",
-        
-    "pages/theme/theme",
-    
-    
-    
-    
+    "pages/home/home",
     "pages/login/_login",
-    "pages/me/_me",
-    "pages/binding/binding",
-    
+    "pages/tomato/tomato",
+    "pages/theme/theme",
     "components/clock/clock",
     "components/button/button",
     "components/confirm/confirm",
@@ -32,16 +24,16 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/homex/homex",
-        "text": "专注",
+        "pagePath": "pages/home/home",
+        "text": "主页",
         "iconPath": "images/home.png",
         "selectedIconPath": "images/home-active.png"
       },
       {
         "pagePath": "pages/theme/theme",
         "text": "主题",
-        "iconPath": "images/me.png",
-        "selectedIconPath": "images/me-active.png"
+        "iconPath": "images/theme.png",
+        "selectedIconPath": "images/theme-active.png"
       }
     ]
   }

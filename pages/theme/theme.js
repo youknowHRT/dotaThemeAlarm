@@ -32,7 +32,7 @@ Page({
     })
 
     wx.switchTab({
-      url:"/pages/homex/homex"
+      url:"/pages/home/home"
     })
   },
   /**

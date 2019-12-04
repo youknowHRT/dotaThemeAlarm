@@ -9,6 +9,7 @@ Page({
    
   },
   login(event){
+    console.log(event)
     let encrypted_data = event.detail.encryptedData
     let iv =event.detail.iv
     this.wxLogin(encrypted_data, iv)
@@ -19,7 +20,7 @@ Page({
     })
   },
   loginMe(code,iv,encrypted_data){
-    http.post('/sign_in/mini_program_user', {
+    http.post(`/sign_in/mini_program_user`, {
       code,
       iv,
       encrypted_data,
@@ -27,12 +28,16 @@ Page({
       app_secret,
     })
     .then(response => {
+      console.log(response)
       wx.setStorageSync('me', response.response.data.resource)
       wx.setStorageSync('X-token', response.response.header["X-token"])
       wx.reLaunch({
-        url: '/pages/home/home',
+        url: `/pages/home/home`,
       })
     })
+    // wx.reLaunch({
+    //   url: `/pages/home/home`,
+    // })
   },
   /**
    * 生命周期函数--监听页面隐藏

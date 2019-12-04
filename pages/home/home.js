@@ -9,8 +9,6 @@ Page({
     bigItemShow:false,
     timeWeChoose:null,
     backgroundIMG:"/images/regeneration.jpeg",
-    // backgroundIMG:"https://i.loli.net/2019/11/09/oZFyRj3HMKGvQhA.jpg",
-    // backgroundIMG:"",
     minItemTop:"100",
     minItemLeft:"100",
     minItemColor:"red"
@@ -62,7 +60,6 @@ Page({
       filePath: this.data.backgroundIMG, 
       encoding: 'base64', 
       success: res => {
-        // console.log('data:image/png;base64,' + res.data)
         this.setData({
           backgroundIMG: 'data:image/jpeg;base64,' + res.data
         })
