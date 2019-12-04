@@ -1,4 +1,4 @@
-# 刀风定时器小程序
+# 刀风小闹钟
 ### 截图
 
 ![截图1.png](https://i.loli.net/2019/12/04/KQnctZH16pjT7l3.png)
